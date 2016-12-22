@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="278" id="KGk-i7-Jjw" customClass="TuiJianNeiHanJingHuaTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="277"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-6U-FZr" userLabel="背景图">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="222" id="H2m-XR-8xo"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b92-6o-OLh" userLabel="查看按钮">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="查看内涵精华">
+                            <color key="titleColor" red="1" green="0.42009036700000002" blue="0.5773648817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爆笑GIF：这才是正真的打灰机！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4z-fQ-xQW" userLabel="标题">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iBk-Jt-9aI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b92-6o-OLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eq8-oq-Y7K"/>
+                    <constraint firstItem="Hsb-6U-FZr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UCi-0M-1KN"/>
+                    <constraint firstAttribute="bottom" secondItem="b92-6o-OLh" secondAttribute="bottom" id="ZY3-jn-RTE"/>
+                    <constraint firstItem="b92-6o-OLh" firstAttribute="top" secondItem="Hsb-6U-FZr" secondAttribute="bottom" id="Zd1-VR-Kv0"/>
+                    <constraint firstAttribute="trailing" secondItem="b92-6o-OLh" secondAttribute="trailing" id="d4N-XL-9gt"/>
+                    <constraint firstItem="Hsb-6U-FZr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="id8-B6-ibb"/>
+                    <constraint firstItem="z4z-fQ-xQW" firstAttribute="trailing" secondItem="Hsb-6U-FZr" secondAttribute="trailing" id="mOg-88-xQO"/>
+                    <constraint firstAttribute="trailing" secondItem="Hsb-6U-FZr" secondAttribute="trailing" constant="10" id="sdw-GP-p7L"/>
+                    <constraint firstItem="z4z-fQ-xQW" firstAttribute="bottom" secondItem="Hsb-6U-FZr" secondAttribute="bottom" constant="-5" id="uG3-5W-QwG"/>
+                    <constraint firstItem="z4z-fQ-xQW" firstAttribute="leading" secondItem="Hsb-6U-FZr" secondAttribute="leading" id="vDG-X3-lAf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="Hsb-6U-FZr" id="F6a-Ma-sp8"/>
+                <outlet property="bgImageViewHeight" destination="H2m-XR-8xo" id="qx1-Oz-YNi"/>
+                <outlet property="checkBtn" destination="b92-6o-OLh" id="7nw-Jc-4W1"/>
+                <outlet property="title" destination="z4z-fQ-xQW" id="A3Z-G0-Pnm"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="-43"/>
+        </tableViewCell>
+    </objects>
+</document>

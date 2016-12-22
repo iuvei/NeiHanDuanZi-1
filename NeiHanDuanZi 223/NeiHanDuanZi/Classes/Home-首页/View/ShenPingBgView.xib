@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShenPingBgView">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="气死你个强迫症" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kj-u9-kRY" userLabel="用户名">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4rh-1R-2YF"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="eZ5-Zu-pJM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-Ah-jYo" userLabel="点赞">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="0wi-As-kAO"/>
+                        <constraint firstAttribute="height" constant="25" id="Gfa-wS-i3M"/>
+                    </constraints>
+                    <state key="normal" image="digupicon_textpage"/>
+                    <connections>
+                        <action selector="digUpAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bPf-5G-bGt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL9-x3-LIE" userLabel="转发">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="RmY-QI-x4j"/>
+                        <constraint firstAttribute="width" constant="25" id="dB3-hj-lCl"/>
+                    </constraints>
+                    <state key="normal" image="moreicon_textpage"/>
+                    <connections>
+                        <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="a8S-u9-4WJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="万一长大只有一米五咋办？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-8A-wPB" userLabel="评论">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="aFR-Zc-KNg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19814" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw3-OS-Agq" userLabel="点赞数">
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="LBA-2w-Szw"/>
+                        <constraint firstAttribute="height" constant="25" id="gjo-La-EPM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.53886707820000002" green="0.53886707820000002" blue="0.53886707820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaulthead" translatesAutoresizingMaskIntoConstraints="NO" id="E5s-c1-GaS" userLabel="用户头像">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="SyR-2L-kyN"/>
+                        <constraint firstAttribute="height" constant="30" id="f7J-mu-NNB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uw3-OS-Agq" firstAttribute="top" secondItem="7Kj-u9-kRY" secondAttribute="top" id="2dW-jZ-hPH"/>
+                <constraint firstItem="4EV-8A-wPB" firstAttribute="top" secondItem="uw3-OS-Agq" secondAttribute="bottom" constant="10" id="3Ei-ge-acr"/>
+                <constraint firstItem="mL9-x3-LIE" firstAttribute="top" secondItem="7Kj-u9-kRY" secondAttribute="top" id="5i1-cE-0sn"/>
+                <constraint firstItem="uw3-OS-Agq" firstAttribute="leading" secondItem="nhW-Ah-jYo" secondAttribute="trailing" id="Rld-Pu-Soh"/>
+                <constraint firstItem="E5s-c1-GaS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="SbO-bu-J9G"/>
+                <constraint firstItem="7Kj-u9-kRY" firstAttribute="centerY" secondItem="E5s-c1-GaS" secondAttribute="centerY" id="UfA-41-22u"/>
+                <constraint firstItem="E5s-c1-GaS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="bgh-ty-alX"/>
+                <constraint firstAttribute="bottom" secondItem="4EV-8A-wPB" secondAttribute="bottom" id="gjV-DG-yzd"/>
+                <constraint firstAttribute="trailing" secondItem="mL9-x3-LIE" secondAttribute="trailing" constant="5" id="ksz-7u-vB7"/>
+                <constraint firstItem="4EV-8A-wPB" firstAttribute="leading" secondItem="7Kj-u9-kRY" secondAttribute="leading" id="mGu-Uv-aH9"/>
+                <constraint firstItem="7Kj-u9-kRY" firstAttribute="leading" secondItem="E5s-c1-GaS" secondAttribute="trailing" constant="8" id="uTw-Zc-oqc"/>
+                <constraint firstAttribute="trailing" secondItem="4EV-8A-wPB" secondAttribute="trailing" constant="16" id="vl5-5C-Xov"/>
+                <constraint firstItem="mL9-x3-LIE" firstAttribute="leading" secondItem="uw3-OS-Agq" secondAttribute="trailing" id="w0I-Iz-brD"/>
+                <constraint firstItem="nhW-Ah-jYo" firstAttribute="top" secondItem="7Kj-u9-kRY" secondAttribute="top" id="zYn-7Z-jFJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="comment" destination="4EV-8A-wPB" id="s92-rZ-GUY"/>
+                <outlet property="digUpBtn" destination="nhW-Ah-jYo" id="eXH-B0-miL"/>
+                <outlet property="digupCount" destination="uw3-OS-Agq" id="swp-ft-Vqa"/>
+                <outlet property="userHeaderImage" destination="E5s-c1-GaS" id="6H8-AA-o92"/>
+                <outlet property="userName" destination="7Kj-u9-kRY" id="C13-gS-Vva"/>
+                <outlet property="zhuanFaBtn" destination="mL9-x3-LIE" id="TYa-LJ-drN"/>
+            </connections>
+            <point key="canvasLocation" x="-927" y="-192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaulthead" width="60" height="60"/>
+        <image name="digupicon_textpage" width="36" height="36"/>
+        <image name="moreicon_textpage" width="36" height="36"/>
+    </resources>
+</document>

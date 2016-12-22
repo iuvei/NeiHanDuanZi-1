@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareBtn">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="101"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_weixin" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-MH-T3w">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="54c-Cc-LtE"/>
+                        <constraint firstAttribute="height" constant="50" id="q7C-Dl-6Sc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6d-5Y-qDx">
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="29" id="Ayl-LO-Yd8"/>
+                        <constraint firstAttribute="height" constant="21" id="Ibt-FG-A14"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C6d-5Y-qDx" firstAttribute="top" secondItem="ccE-MH-T3w" secondAttribute="bottom" constant="5" id="KqF-hL-tIO"/>
+                <constraint firstItem="ccE-MH-T3w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="NMo-Ti-PsI"/>
+                <constraint firstItem="C6d-5Y-qDx" firstAttribute="centerX" secondItem="ccE-MH-T3w" secondAttribute="centerX" id="Yom-ep-jER"/>
+                <constraint firstItem="ccE-MH-T3w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mUu-Ve-TGy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="ccE-MH-T3w" id="9B0-eQ-Ou5"/>
+                <outlet property="nameLabel" destination="C6d-5Y-qDx" id="fCk-Jr-uFv"/>
+            </connections>
+            <point key="canvasLocation" x="-190.5" y="-204.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_weixin" width="30" height="30"/>
+    </resources>
+</document>

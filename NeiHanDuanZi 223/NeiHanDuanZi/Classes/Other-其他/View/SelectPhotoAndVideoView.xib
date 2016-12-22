@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectPhotoAndVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx5-V0-8WD">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Hui-cW-BbB"/>
+                        <constraint firstAttribute="width" constant="24" id="pm8-ur-0Jn"/>
+                    </constraints>
+                    <state key="normal" image="publish_picture"/>
+                    <connections>
+                        <action selector="selectPicAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="roB-2I-YjA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6K-GT-xo6">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Ypd-Oe-Bme"/>
+                        <constraint firstAttribute="height" constant="24" id="nDJ-Ms-mWb"/>
+                    </constraints>
+                    <state key="normal" image="publish_video"/>
+                    <connections>
+                        <action selector="selectVideoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="sqt-h6-hPg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkO-b1-Ekx">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="6pn-Xw-aXn"/>
+                        <constraint firstAttribute="height" constant="21" id="uAh-Sa-ZoR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还能输入300个字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJj-Jm-3H7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="696-Sd-MuU"/>
+                        <constraint firstAttribute="width" constant="108" id="tWl-eZ-sds"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kc-L6-owD">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="ekq-wT-1F2"/>
+                        <constraint firstAttribute="height" constant="40" id="ugd-85-QWt"/>
+                    </constraints>
+                    <state key="normal" title="匿名">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectTrueNameAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KWl-hg-80i"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH5-It-zOE">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Vo9-bR-8wX"/>
+                        <constraint firstAttribute="width" constant="24" id="cQk-8b-RUf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SkO-b1-Ekx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="27" id="NuT-EY-W9d"/>
+                <constraint firstItem="bx5-V0-8WD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="O9U-ag-o3K"/>
+                <constraint firstItem="eH5-It-zOE" firstAttribute="leading" secondItem="SkO-b1-Ekx" secondAttribute="trailing" constant="30" id="PfA-ff-1ih"/>
+                <constraint firstItem="6Kc-L6-owD" firstAttribute="top" secondItem="lJj-Jm-3H7" secondAttribute="bottom" id="QIq-Zc-Df9"/>
+                <constraint firstItem="i6K-GT-xo6" firstAttribute="top" secondItem="bx5-V0-8WD" secondAttribute="top" id="ak3-8m-PWR"/>
+                <constraint firstItem="bx5-V0-8WD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="cFp-li-S08"/>
+                <constraint firstAttribute="trailing" secondItem="6Kc-L6-owD" secondAttribute="trailing" constant="6" id="hOe-xr-jZb"/>
+                <constraint firstItem="SkO-b1-Ekx" firstAttribute="top" secondItem="bx5-V0-8WD" secondAttribute="bottom" id="ka4-Nn-inQ"/>
+                <constraint firstAttribute="trailing" secondItem="lJj-Jm-3H7" secondAttribute="trailing" constant="6" id="p6t-FT-NBh"/>
+                <constraint firstItem="lJj-Jm-3H7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="q6o-Hx-Y0f"/>
+                <constraint firstItem="i6K-GT-xo6" firstAttribute="leading" secondItem="bx5-V0-8WD" secondAttribute="trailing" constant="30" id="uBp-Of-JDc"/>
+                <constraint firstItem="eH5-It-zOE" firstAttribute="top" secondItem="SkO-b1-Ekx" secondAttribute="top" id="xnZ-Zg-AwY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selectPic" destination="bx5-V0-8WD" id="Ia7-dP-uwG"/>
+                <outlet property="selectTrueName" destination="6Kc-L6-owD" id="Nny-0r-7DU"/>
+                <outlet property="selectVideo" destination="i6K-GT-xo6" id="22b-s3-qAa"/>
+            </connections>
+            <point key="canvasLocation" x="105" y="-71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="publish_picture" width="24" height="24"/>
+        <image name="publish_video" width="24" height="24"/>
+    </resources>
+</document>

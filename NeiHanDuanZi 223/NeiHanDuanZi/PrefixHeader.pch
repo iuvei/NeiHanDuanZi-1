@@ -1,0 +1,52 @@
+//
+//  PrefixHeader.pch
+//  Bilibili
+//
+//  Created by ibokan2 on 2016/10/24.
+//  Copyright © 2016年 ZCQ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+//#ifdef __OBJC__  #endif 只会拷贝到OC源代码文件中，而不会拷贝到其他源代码文件中
+#ifdef __OBJC__
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+//定义5种cell的identifier
+#define CellIdentifier @"CellIdentifier"
+#define FirstCellIdentifier @"FirstCellIdentifier"
+#define SecondCellIdentifier @"SecondCellIdentifier"
+#define ThirdCellIdentifier @"ThirdCellIdentifier"
+#define FourthCellIdentifier @"FourthCellIdentifier"
+#define FifthCellIdentifier @"FifthCellIdentifier"
+
+/*颜色*/
+#define RLColorA(r,g,b,a) [UIColor colorWithRed:(r/255.0) green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define RLColor(r,g,b) RLColorA((r),(g),(b),255)
+#define RLColorRandom RLColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+#define RLGrayColor(v) RLColor((v),(v),(v))
+#define RLCommonBgColor RLColor(247, 88, 135)
+//导入延展头文件
+#import "UIView+UIViewExtension.h"
+#import "ViewAnimation.h"
+#import <MJRefresh.h>
+
+//日志,测试时生效，发布失效
+#ifdef DEBUG
+#define RLLog(...) NSLog(__VA_ARGS__)
+#else
+#define RLLog(...)//后面为空，没有东西
+#endif
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

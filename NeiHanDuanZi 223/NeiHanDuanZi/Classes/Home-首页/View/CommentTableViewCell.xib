@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaulthead" translatesAutoresizingMaskIntoConstraints="NO" id="lye-u6-02D">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3QU-jo-dxV"/>
+                        <constraint firstAttribute="width" constant="35" id="pEo-ue-w3X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只睡觉绝对不碰你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgJ-be-TEQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="FkF-sz-08Z"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="108" id="K5n-V9-1Qs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.53886707820000002" green="0.53886707820000002" blue="0.53886707820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksW-9k-5y3">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="IQW-eW-MFS"/>
+                        <constraint firstAttribute="height" constant="36" id="XXZ-kl-nJI"/>
+                    </constraints>
+                    <state key="normal" image="digupicon_textpage"/>
+                    <connections>
+                        <action selector="digupAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="MBy-c5-p7k"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20894" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaJ-0B-eZS">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WeT-Yn-ZRj"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="YHF-6O-dwD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.53886707820000002" green="0.53886707820000002" blue="0.53886707820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-O8-GOA">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="8UM-8M-OC6"/>
+                        <constraint firstAttribute="width" constant="36" id="Fs4-gF-Rx4"/>
+                    </constraints>
+                    <state key="normal" image="moreicon_textpage-1"/>
+                    <connections>
+                        <action selector="shareAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="NvK-b1-V6G"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这八年只是一个开始，现在不只黑，长友们还帮你绿" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCP-yn-dSC">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="299" id="kNG-Bj-Lzf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="kWj-ww-eNn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11-16 08:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbg-sg-kai">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="108" id="PSq-Ns-k6X"/>
+                        <constraint firstAttribute="height" constant="21" id="YR6-SP-bbf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.53886707820000002" green="0.53886707820000002" blue="0.53886707820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lye-u6-02D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="16V-Nz-eYd"/>
+                <constraint firstItem="Qbg-sg-kai" firstAttribute="top" secondItem="IgJ-be-TEQ" secondAttribute="bottom" id="1mr-RF-EZZ"/>
+                <constraint firstItem="YD3-O8-GOA" firstAttribute="centerY" secondItem="PaJ-0B-eZS" secondAttribute="centerY" id="7ch-Rx-Y3q"/>
+                <constraint firstItem="IgJ-be-TEQ" firstAttribute="top" secondItem="lye-u6-02D" secondAttribute="top" id="Ch2-fo-JaB"/>
+                <constraint firstItem="iCP-yn-dSC" firstAttribute="top" secondItem="Qbg-sg-kai" secondAttribute="bottom" constant="10" id="Gs2-F8-y2c"/>
+                <constraint firstAttribute="trailing" secondItem="YD3-O8-GOA" secondAttribute="trailing" constant="25" id="JXD-3t-TER"/>
+                <constraint firstItem="iCP-yn-dSC" firstAttribute="leading" secondItem="IgJ-be-TEQ" secondAttribute="leading" id="L2T-OD-aIZ"/>
+                <constraint firstItem="ksW-9k-5y3" firstAttribute="centerY" secondItem="IgJ-be-TEQ" secondAttribute="centerY" id="R7E-Te-X0e"/>
+                <constraint firstItem="YD3-O8-GOA" firstAttribute="centerY" secondItem="IgJ-be-TEQ" secondAttribute="centerY" id="SMY-1d-1ci"/>
+                <constraint firstItem="IgJ-be-TEQ" firstAttribute="leading" secondItem="lye-u6-02D" secondAttribute="trailing" constant="5" id="UMN-aR-aGS"/>
+                <constraint firstItem="Qbg-sg-kai" firstAttribute="leading" secondItem="IgJ-be-TEQ" secondAttribute="leading" id="WUY-cb-5fJ"/>
+                <constraint firstItem="lye-u6-02D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="i4n-Mx-G57"/>
+                <constraint firstItem="YD3-O8-GOA" firstAttribute="leading" secondItem="PaJ-0B-eZS" secondAttribute="trailing" constant="10" id="lin-2a-KbI"/>
+                <constraint firstItem="PaJ-0B-eZS" firstAttribute="leading" secondItem="ksW-9k-5y3" secondAttribute="trailing" id="r0Y-re-FVv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="iCP-yn-dSC" id="iT3-fZ-FXT"/>
+                <outlet property="digupBtn" destination="ksW-9k-5y3" id="m77-WH-M5t"/>
+                <outlet property="digupCountLabel" destination="PaJ-0B-eZS" id="jIY-xn-hag"/>
+                <outlet property="shareBtn" destination="YD3-O8-GOA" id="sdI-fk-kt5"/>
+                <outlet property="timeLabel" destination="Qbg-sg-kai" id="BcQ-4C-bsY"/>
+                <outlet property="userHeaderImageView" destination="lye-u6-02D" id="ixN-l8-4PL"/>
+                <outlet property="userNameLabel" destination="IgJ-be-TEQ" id="HWB-7q-EY9"/>
+            </connections>
+            <point key="canvasLocation" x="-1056" y="-670"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="defaulthead" width="60" height="60"/>
+        <image name="digupicon_textpage" width="36" height="36"/>
+        <image name="moreicon_textpage-1" width="36" height="36"/>
+    </resources>
+</document>
